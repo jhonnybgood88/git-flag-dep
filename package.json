@@ -1,0 +1,10 @@
+{
+  "name": "@jhonnybgood88/git-flag-dep",
+  "version": "1.0.0",
+  "description": "Benign external dependency fixture that writes local flag files from npm lifecycle scripts.",
+  "license": "UNLICENSED",
+  "scripts": {
+    "prepare": "node -e \"require('fs').writeFileSync('./git-flag-dep-prepare-main.txt', '@jhonnybgood88/git-flag-dep prepare ran\\n')\"",
+    "preinstall": "node -e \"require('fs').writeFileSync('./git-flag-dep-preinstall-main.txt', '@jhonnybgood88/git-flag-dep preinstall ran\\n')\""
+  }
+}
